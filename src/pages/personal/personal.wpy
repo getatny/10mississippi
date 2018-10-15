@@ -1,0 +1,269 @@
+<template>
+    <view id="personal-page">
+        <view class="header">
+            <view class="pure"></view>
+        </view>
+        <view class="user-info">
+            <view class="avatar-mask"></view>
+            <image src="{{ user.avatarUrl }}"></image>
+            <view class="nickname">{{ user.nickName }}</view>
+        </view>
+        <view class="menu">
+            <repeat for="{{menuList}}">
+                <view class="item" @tap="handleMenuEvent({{item.type}}, {{item.path}})">
+                    <image src="{{item.icon}}" class="icon"></image>
+                    <view class="title">{{item.title}}</view>
+                    <image src="../../static/img/arrow-right.png" class="arrow"></image>
+                </view>
+            </repeat>
+        </view>
+
+        <button class="login-button" open-type="getUserInfo" @getuserinfo="getUserInfo" wx:if="{{ifShowLoginButton}}">把头像交出来 :)</button>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+    import ls from '../../utils/localstorage'
+    import * as http from '../../utils/http'
+
+    export default class Personal extends wepy.page {
+        config = {
+            navigationBarTitleText: '个人主页',
+            navigationBarBackgroundColor: '#ffb11b'
+        }
+
+        data = {
+            user: {
+                nickName: '未登陆'
+            },
+            ifShowLoginButton: false,
+            canIUseOpenType: wx.canIUse('button.open-type.getUserInfo'),
+            menuList: [
+                {
+                    path: 'feedback',
+                    type: 'page',
+                    icon: '../../static/img/return.png',
+                    title: '建议反馈'
+                },
+                {
+                    path: 'aboutus',
+                    type: 'page',
+                    icon: '../../static/img/about.png',
+                    title: '关于我们'
+                },
+                {
+                    type: 'clear',
+                    icon: '../../static/img/clear.png',
+                    title: '清除缓存'
+                },
+            ]
+        }
+
+        methods = {
+            async getUserInfo(e) {
+                if (!e.detail.userInfo) {
+                    wepy.showToast({
+                        title: '获取头像失败了呢！不过没关系，再次点击就行。',
+                        icon: 'none'
+                    })
+                } else {
+                    this.$parent.globalData.user.nickName = e.detail.userInfo.nickName;
+                    this.$parent.globalData.user.avatarUrl = e.detail.userInfo.avatarUrl;
+                    this.user = this.$parent.globalData.user;
+                    this.ifShowLoginButton = false;
+
+                    let user = ls.Get('user');
+
+                    if (user) {
+                        http.POST('/api/user/update/' + user.id, e.detail.userInfo).then(() => {
+                            ls.Set('user', this.user);
+                        });
+                    } else {
+                        http.POST('/api/user/update/' + this.$parent.globalData.user.id, e.detail.userInfo).then(() => {
+                            ls.Set('user', this.user);
+                        });
+                    }
+                }
+            },
+            handleMenuEvent(type, param = undefined) {
+                if (type === 'page') {
+                    this.goToPage(param);
+                } else if (type === 'clear') {
+                    wepy.showModal({
+                        title: '确定清除缓存吗？',
+                        content: 'TAT，为什么要清除缓存，缓存那么可爱~（微信小程序缓存上限为10MB，真的没有占用多少内存）',
+                        confirmText: '残忍清除',
+                        success: res => {
+                            if (res.confirm) {
+                                wx.clearStorageSync();
+                                wepy.showToast({
+                                    title: '缓存清理成功'
+                                });
+                            }
+                        }
+                    })
+                }
+            }
+        }
+
+        goToPage(path, param = null) {
+            wepy.navigateTo({
+                url: path
+            });
+        }
+
+        isLogin() {
+            return new Promise((resolve) => {
+                let userInfo = ls.Get('user').nickName;
+                resolve(userInfo);
+            })
+        }
+
+        async showLoginButton() {
+            // 检测是否首次登陆
+            let isLogin = await this.isLogin();
+
+            return new Promise((resolve) => {
+                if (isLogin) {
+                    this.user = ls.Get('user');
+                    this.$apply();
+                    resolve();
+                } else {
+                    // 首次登陆
+                    if (this.canIUseOpenType) {
+                        this.ifShowLoginButton = true;
+                    } else {
+                        // 在没有 open-type=getUserInfo 版本的兼容处理
+                        wx.getUserInfo({
+                            success: res => {
+                                this.$parent.globalData.user.nickName = res.nickName;
+                                this.$parent.globalData.user.avatarUrl = res.avatarUrl;
+                                this.user = this.$parent.globalData.user;
+                                ls.Set('user', this.user);
+                            },
+                            fail: res => {
+
+                            }
+                        })
+                    }
+                    this.$apply();
+                    resolve();
+                }
+            });
+        }
+
+        async onLoad() {
+            // 是否显示登陆按钮
+            await this.showLoginButton();
+        }
+    }
+</script>
+
+<style lang="less">
+    #personal-page {
+        min-height: 100vh;
+        background: #eee;
+    }
+
+    .header {
+        width: 750rpx;
+        overflow: hidden;
+
+        .pure {
+            height: 200rpx;
+            width: 750rpx;
+            background: #ffb11b;
+            position: relative;
+        }
+
+        .half-circle {
+            width: 800rpx;
+            height: 120rpx;
+            border-radius: 50%;
+            background: #ffb11b;
+            margin-top: -60rpx;
+            margin-left: -25rpx;
+        }
+    }
+
+    .user-info {
+        width: 750rpx;
+        text-align: center;
+        position: relative;
+        top: -95rpx;
+        height: 300rpx;
+
+        .avatar-mask {
+            width: 180rpx;
+            height: 180rpx;
+            background: #ffb11b;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        image {
+            width: 150rpx;
+            height: 150rpx;
+            border-radius: 50%;
+            box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 15rpx;
+        }
+
+        .nickname {
+            font-size:1em;
+            font-weight:400;
+            position: absolute;
+            bottom: 40rpx;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .menu {
+        margin-top: -75rpx;
+
+        .item {
+            background: #fff;
+            border-top: solid #ccc 1px;
+            border-bottom: solid #ccc 1px;
+            padding: 20rpx 30rpx;
+            display: flex;
+            line-height: 50rpx;
+
+            &:nth-child(n+2) {
+                border-top: none;
+            }
+
+            .icon {
+                width: 50rpx;
+                height: 50rpx;
+                margin-right: 20rpx;
+            }
+
+            .title {
+                flex: 8;
+                font-size: .9em;
+            }
+
+            .arrow {
+                width: 35rpx;
+                height: 35rpx;
+                margin-top: 7.5rpx;
+            }
+        }
+    }
+
+    .login-button {
+        width: 350rpx;
+        margin:40rpx auto 0;
+        background:#ffb11b;
+        color:#fff;
+        font-size:.8em;
+    }
+</style>

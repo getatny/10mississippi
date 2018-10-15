@@ -1,0 +1,16 @@
+{
+	"description": "A WePY project",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wx455118475a316a07",
+	"projectname": "10mississippi",
+	"miniprogramRoot": "./dist",
+	"libVersion": "1.9.94",
+	"condition": {}
+}

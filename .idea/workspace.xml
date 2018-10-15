@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6892c288-43f2-46b1-8cab-3318697e29e4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/10Mississippi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.wepycache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.wepyignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CButton.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config-sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mixins/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/article/article.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/article/articledetail.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/music/music.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/personal/aboutus.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/personal/feedback.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/personal/personal.wpy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/aboutus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/arrow-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/category.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/feedback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/flower-non.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/flower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/lamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/life-non.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/life.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/music-non.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/music-play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/music-stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/netease.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/qqmusic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/return.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/localstorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wepy.config.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2024587739">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="png" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-807676791">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="2" />
+          <entry key="js" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="4" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gitignore" value="9" />
+          <entry key="js" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="6" />
+          <entry key="PLAIN_TEXT" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/music/music.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="372" column="36" selection-start-line="372" selection-start-column="36" selection-end-line="372" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wepy.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-703">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mixins/test.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/http.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1036">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="59" selection-start-column="59" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/config-sample.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/article/article.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3922">
+              <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/personal/personal.wpy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2257">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>album-cover</find>
+      <find>AV</find>
+      <find>comment</find>
+      <find>Comment</find>
+      <find>album-date</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.editorconfig" />
+        <option value="$PROJECT_DIR$/src/pages/index.wpy" />
+        <option value="$PROJECT_DIR$/src/utils/localstorage.js" />
+        <option value="$PROJECT_DIR$/src/components/comments.wpy" />
+        <option value="$PROJECT_DIR$/src/components/guidtext.wpy" />
+        <option value="$PROJECT_DIR$/dist/components/counter.wxml" />
+        <option value="$PROJECT_DIR$/src/components/comment.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/movie/moviedetail.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/movie/movie.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/personal/aboutus.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/personal/feedback.wepy" />
+        <option value="$PROJECT_DIR$/src/static/js/bscroll.min.js" />
+        <option value="$PROJECT_DIR$/src/utils/http.js" />
+        <option value="$PROJECT_DIR$/src/pages/personal/personal.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/personal/feedback.wpy" />
+        <option value="$PROJECT_DIR$/src/components/custombutton.wpy" />
+        <option value="$PROJECT_DIR$/src/components/renderTemplate.wxml" />
+        <option value="$PROJECT_DIR$/src/components/renderTemplate1.wpy" />
+        <option value="$PROJECT_DIR$/src/app.wpy" />
+        <option value="$PROJECT_DIR$/src/components/towxml.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/article/articledetail.wpy" />
+        <option value="$PROJECT_DIR$/src/components/CustomButton.wpy" />
+        <option value="$PROJECT_DIR$/src/components/CButton.wpy" />
+        <option value="$PROJECT_DIR$/src/pages/article/article.wpy" />
+        <option value="$PROJECT_DIR$/src/config.js" />
+        <option value="$PROJECT_DIR$/src/pages/music/music.wpy" />
+        <option value="$PROJECT_DIR$/src/.gitignore" />
+        <option value="$PROJECT_DIR$/src/config-sample.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="640" />
+    <option name="width" value="640" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="10Mississippi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10Mississippi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="10Mississippi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="10Mississippi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Weixin Program\wepy\10Mississippi\src" />
+      <recent name="F:\Weixin Project\wepy\10Mississippi\src\utils" />
+      <recent name="F:\Weixin Project\wepy\10Mississippi\src\components" />
+      <recent name="F:\Weixin Project\wepy\10Mississippi\src\static\img" />
+      <recent name="F:\Weixin Project\wepy\10Mississippi\src\static\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="D:/Program Files/nodejs/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6892c288-43f2-46b1-8cab-3318697e29e4" name="Default" comment="" />
+      <created>1522736619185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522736619185</updated>
+      <workItem from="1522736621541" duration="5555000" />
+      <workItem from="1522762573959" duration="745000" />
+      <workItem from="1522763930787" duration="3283000" />
+      <workItem from="1522807967694" duration="8711000" />
+      <workItem from="1522845590951" duration="768000" />
+      <workItem from="1522847032268" duration="19000" />
+      <workItem from="1522852676691" duration="8194000" />
+      <workItem from="1522892743217" duration="8260000" />
+      <workItem from="1522901553818" duration="4133000" />
+      <workItem from="1522905704187" duration="17322000" />
+      <workItem from="1522988924782" duration="6639000" />
+      <workItem from="1523001317556" duration="18227000" />
+      <workItem from="1523028398843" duration="29323000" />
+      <workItem from="1523113263071" duration="958000" />
+      <workItem from="1523152869306" duration="14341000" />
+      <workItem from="1523180386762" duration="7841000" />
+      <workItem from="1523236950830" duration="961000" />
+      <workItem from="1523255069686" duration="4189000" />
+      <workItem from="1523280346371" duration="101000" />
+      <workItem from="1523285757791" duration="587000" />
+      <workItem from="1523322159031" duration="8151000" />
+      <workItem from="1523344410476" duration="50000" />
+      <workItem from="1523505807420" duration="341000" />
+      <workItem from="1523515889063" duration="1077000" />
+      <workItem from="1523523048771" duration="18000" />
+      <workItem from="1523544418753" duration="593000" />
+      <workItem from="1523883252110" duration="16000" />
+      <workItem from="1526200372537" duration="1611000" />
+      <workItem from="1526202009409" duration="477000" />
+      <workItem from="1526202683691" duration="6663000" />
+      <workItem from="1526278337694" duration="1548000" />
+      <workItem from="1526291478693" duration="156000" />
+      <workItem from="1526292429495" duration="367000" />
+      <workItem from="1526297508893" duration="53000" />
+      <workItem from="1526298562734" duration="1425000" />
+      <workItem from="1526367590892" duration="274000" />
+      <workItem from="1526391718452" duration="4954000" />
+      <workItem from="1526453827702" duration="5409000" />
+      <workItem from="1526553000779" duration="4402000" />
+      <workItem from="1526732514303" duration="723000" />
+      <workItem from="1528018031192" duration="697000" />
+      <workItem from="1533970687713" duration="234000" />
+      <workItem from="1533992511874" duration="3567000" />
+      <workItem from="1534047838012" duration="2296000" />
+      <workItem from="1534137725100" duration="427000" />
+      <workItem from="1536546373803" duration="125000" />
+      <workItem from="1536549339653" duration="8000" />
+      <workItem from="1539608599096" duration="196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="186015000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48335123" visible="true" weight="0.14752372" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.51664877" side_tool="true" weight="0.14699684" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32975295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3004292" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32975295" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/panel.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/components/guidtext.wpy" />
+    <entry file="file://$PROJECT_DIR$/dist/components/panel.wxss" />
+    <entry file="file://$PROJECT_DIR$/dist/components/group.js" />
+    <entry file="file://$PROJECT_DIR$/dist/components/panel.js" />
+    <entry file="file://$PROJECT_DIR$/dist/components/counter.js" />
+    <entry file="file://$PROJECT_DIR$/dist/components/counter.wxml" />
+    <entry file="file://$PROJECT_DIR$/dist/pages/music/music.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="6" column="23" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/counter.wpy" />
+    <entry file="file://$PROJECT_DIR$/node_modules/_wepy@1.7.1@wepy/lib/wepy.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/website.png" />
+    <entry file="file://$PROJECT_DIR$/src/pages/index.wpy" />
+    <entry file="file://$PROJECT_DIR$/dist/static/img/comment.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/pages/index.js" />
+    <entry file="file://$PROJECT_DIR$/dist/pages/index.json" />
+    <entry file="file://$PROJECT_DIR$/dist/pages/index.wxml" />
+    <entry file="file://$PROJECT_DIR$/dist/pages/personal/feedback.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/config.js___jb_tmp___" />
+    <entry file="file://$PROJECT_DIR$/dist/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/pages/article/articledetail.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/arrow-down.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/js/bscroll.min.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/scroll.wpy" />
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/npm/wepy/lib/component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/npm/wepy/lib/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/personal/aboutus.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/towxml.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/entry.wxml" />
+    <entry file="file://$PROJECT_DIR$/src/components/renderTemplate.wxml" />
+    <entry file="file://$PROJECT_DIR$/src/utils/outTemplate.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/renderTemplate1.wpy" />
+    <entry file="file://$PROJECT_DIR$/src/app.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/qqmusic.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/return.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/index.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/cover.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CButton.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/personal/feedback.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/article/articledetail.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3848">
+          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/article/article.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3922">
+          <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/personal/personal.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2257">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/music/music.wpy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="372" column="36" selection-start-line="372" selection-start-column="36" selection-end-line="372" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wepy.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mixins/test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config-sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

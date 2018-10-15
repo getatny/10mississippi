@@ -1,0 +1,240 @@
+<template>
+    <view id="article-detail">
+        <scroll-view class="scroll-view" @scroll="scrollListener" upper-threshold="20" scroll-y @scrolltoupper="changeNavColorToBlack" scroll-with-animation enable-back-to-top scroll-into-view="{{toView}}">
+            <view id="thumb" class="thumb" @tap="scrollToContent">
+                <image src="{{articleInfo.cover}}" mode="aspectFill" class="cover"></image>
+                <view class="mask-info">
+                    <view class="title">{{articleInfo.title}}</view>
+                    <view class="info">
+                        {{articleTime}}
+                    </view>
+                </view>
+                <image src="../../static/img/arrow-down.png" class="arrow"></image>
+            </view>
+            <view id='wrap' class="wrap">
+                <view class="title">{{articleInfo.title}}</view>
+                <view class="info">
+                    <view>
+                        <image src="../../static/img/author.png"></image>
+                        {{articleInfo.author}}
+                    </view>
+                    <view>
+                        <image src="../../static/img/time.png"></image>
+                        {{articleTime}}
+                    </view>
+                </view>
+                <view class="description">{{articleInfo.description}}</view>
+                <rich-text class="content" nodes="{{articleInfo.content}}"></rich-text>
+            </view>
+        </scroll-view>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+    import * as http from '../../utils/http'
+
+    export default class ArticleDetail extends wepy.page {
+        config = {
+            navigationBarTextStyle: 'white',
+            navigationBarBackgroundColor: '#000000'
+        }
+
+        data = {
+            articleInfo: {
+                cover: ''
+            },
+            toView: 'thumb',
+            scrollListener: true,
+            wrapPosition: 0
+        }
+
+        computed = {
+            articleTime() {
+                return new Date(Date.parse(this.articleInfo.createdAt)).toDateString();
+            }
+        }
+
+        methods = {
+            scrollToContent() {
+                this.toView = 'wrap';
+
+                wx.setNavigationBarColor({
+                    frontColor: '#000000',
+                    backgroundColor: '#ffb11b',
+                    animation: {
+                        duration: 500,
+                        timingFunc: 'ease'
+                    }
+                })
+            },
+            changeNavColorToBlack() {
+                wx.setNavigationBarColor({
+                    frontColor: '#ffffff',
+                    backgroundColor: '#000000',
+                    animation: {
+                        duration: 500,
+                        timingFunc: 'ease'
+                    }
+                })
+
+                this.toView = 'thumb';
+                this.scrollListener = true;
+            },
+            scrollListener(e) {
+                if (this.scrollListener) {
+                    if (e.detail.scrollTop >= this.wrapPosition) {
+                        this.scrollListener = false;
+                        wx.setNavigationBarColor({
+                            frontColor: '#000000',
+                            backgroundColor: '#ffb11b',
+                            animation: {
+                                duration: 500,
+                                timingFunc: 'ease'
+                            }
+                        })
+                    }
+                }
+            }
+        }
+
+        getArticle(id) {
+            return new Promise((resolve) => {
+                http.GET('/api/article/' + id).then((res) => {
+                    this.articleInfo = res.docs[0];
+                    this.$apply();
+                    resolve();
+                })
+            })
+        }
+
+        async onLoad(param) {
+            // Loading
+            wepy.showLoading({
+                title: '文章数据加载中...'
+            })
+
+            // 获取文章信息
+            if (this.articleInfo._id !== param.id) {
+                await this.getArticle(param.id);
+            }
+
+            wepy.hideLoading();
+
+            if (this.wrapPosition === 0) {
+                wx.createSelectorQuery().select('#thumb').boundingClientRect(res => {
+                    this.wrapPosition = res.bottom;
+                }).exec();
+            }
+        }
+
+        onShow() {
+            // 重置scroll-into-view
+            this.toView = 'thumb';
+        }
+    }
+</script>
+
+<style lang="less">
+    .scroll-view {
+        height: 100vh;
+    }
+
+    .thumb {
+        height: 100vh;
+        width: 750rpx;
+        position: relative;
+
+        .cover {
+            width: 750rpx;
+            height: 100vh;
+            position: relative;
+
+            &:before {
+                content: ' ';
+                width: 750rpx;
+                height: 25vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(to bottom, #000, rgba(0, 0, 0, .3));
+            }
+
+            &:after {
+                content: ' ';
+                width: 750rpx;
+                height: 75vh;
+                background: rgba(0, 0, 0, .3);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .mask-info {
+            position: absolute;
+            bottom: 180rpx;
+            width: 750rpx;
+            color: #fff;
+            text-align: center;
+            text-shadow: #ccc 0px 0px 10px;
+            padding: 0 30rpx;
+            box-sizing: border-box;
+
+            .title {
+                font-size: 1.1em;
+            }
+
+            .info {
+                font-size: .9em;
+                color: #eee;
+                margin-top: 15rpx;
+            }
+        }
+
+        .arrow {
+            width: 60rpx;
+            height: 60rpx;
+            position: absolute;
+            bottom: 60rpx;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .wrap {
+        padding: 50rpx 35rpx;
+        display: block;
+        font-size: 16px;
+        line-height: 1.8em;
+
+        .title {
+            font-size: 1.3em;
+            font-weight: 800;
+            margin-bottom: 15rpx;
+        }
+
+        .info {
+            margin-bottom: 40rpx;
+
+            view {
+                display: inline;
+                margin-right: 25rpx;
+
+                image {
+                    width: 35rpx;
+                    height: 35rpx;
+                    position: relative;
+                    top: 5rpx;
+                    margin-right: 5rpx;
+                }
+            }
+        }
+
+        .description {
+            background: #eee;
+            padding: 20rpx;
+            margin-bottom: 40rpx;
+        }
+    }
+</style>

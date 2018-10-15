@@ -1,0 +1,35 @@
+<template>
+    <view id="button-component" @tap="emitEvent">
+        <image src="{{icon}}" style="width: 60rpx; height: 60rpx;background: {{color}}"></image>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class CButton extends wepy.component {
+        props = {
+            color: String,
+            icon: String,
+            width: String
+        }
+
+        methods = {
+            emitEvent() {
+                this.$emit('buttonTap');
+            }
+        }
+    }
+</script>
+
+<style lang="less">
+    #button-component {
+        display: inline;
+
+        image {
+            box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+            padding: 20rpx;
+            border-radius: 50%;
+        }
+    }
+</style>

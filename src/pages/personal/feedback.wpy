@@ -1,0 +1,155 @@
+<template>
+    <view id="feedback-page">
+        <view class="header">
+            <view class="info">
+                <image src="../../static/img/feedback.png"></image>
+                <view class="title">
+                    建议
+                    <view>反馈</view>
+                </view>
+            </view>
+        </view>
+        <form class="feedback-form" report-submit="true" @submit="submitIssue">
+            <text class="label">新建反馈</text>
+            <input type="text" name="title" placeholder="请输入反馈标题" show-confirm-bar="true" class="title"/>
+            <picker mode="selector" range="{{feedbackType}}" name="label" @change="changeLabel" class="picker-label">
+                <view class="picker">
+                    反馈类型：{{feedbackType[index]}}
+                </view>
+            </picker>
+            <textarea type="text" name="body" placeholder="请输入反馈内容。若反馈Bug请详细描述Bug出现的页面、过程以及您使用的平台（安卓、IOS）" show-confirm-bar="true" class="body"/>
+            <button formType="submit" class="submit-button">提交反馈</button>
+        </form>
+        <text class="tips">您的反馈将会以Issues的形式提交至本小程序的开源项目上，在您提交反馈后，系统将会把issue的详细地址复制到您手机的剪贴板上，您可以使用浏览器粘贴访问反馈页面查看反馈详情。另注：频繁恶意反馈的用户将取消其反馈资格。</text>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+    import * as http from '../../utils/http'
+
+    export default class FeedBack extends wepy.page {
+        config = {
+            navigationBarTitleText: '建议反馈',
+            navigationBarBackgroundColor: '#ffb11b'
+        }
+
+        data = {
+            feedbackType: ['Bug', '建议', '其他'],
+            index: 0
+        }
+
+        methods = {
+            async submitIssue(e) {
+                if (e.detail.value.title === '' || e.detail.value.body === '') {
+                    wepy.showToast({
+                        title: '标题或内容不能为空，请重新填写',
+                        icon: 'none'
+                    });
+                    return;
+                }
+
+                http.POST('/api/feedback/create', {
+                    title: e.detail.value.title,
+                    content: e.detail.value.body,
+                    fbPerson: this.$parent.globalData.user.id,
+                    label: this.feedbackType[this.index]
+                }).then(() => {
+                    wepy.showModal({
+                        title: '反馈提交成功！',
+                        content: '您的反馈已经收到，bug反馈我们会尽快修复，建议类反馈我们考虑后决定是否采纳，请勿重复反馈！',
+                        showCancel: false,
+                        confirmText: '好的',
+                        success: () => {
+                            wepy.navigateBack();
+                        }
+                    });
+                });
+            },
+            changeLabel(e) {
+                this.index = e.detail.value;
+            }
+        }
+    }
+</script>
+
+<style lang="less">
+    #feedback-page {
+        min-height: 100vh;
+        background: #eee;
+    }
+
+    .header {
+        text-align: center;
+        padding: 50rpx 0;
+        background: #ffb11b;
+
+        .info {
+            display: inline-block;
+            line-height: 80rpx;
+            height: 80rpx;
+        }
+
+        image {
+            width: 80rpx;
+            height: 80rpx;
+            display: inline-block;
+            float: left;
+            margin-right: 20rpx;
+        }
+
+        .title {
+            font-size: 35rpx;
+            display: inline-block;
+
+            view {
+                display: inline;
+                color: #fff;
+            }
+        }
+    }
+
+    .feedback-form {
+        display: block;
+
+        .label {
+            font-size: .8em;
+            color: #777;
+            padding: 25rpx 25rpx;
+            display: block;
+        }
+
+        .title, .body, .picker-label {
+            background: #fff;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            padding: 15rpx 25rpx;
+            width: 700rpx;
+            font-size: .9em;
+            overflow: hidden;
+        }
+
+        .title, .picker-label {
+            border-bottom: none;
+            height: 40rpx;
+        }
+
+        .submit-button {
+            background: #ffb11b;
+            width: 650rpx;
+            position: absolute;
+            bottom: 50rpx;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .tips {
+        color: #777;
+        font-size: .8em;
+        padding: 25rpx 20rpx;
+        text-indent: 2em;
+        display: block;
+        line-height: 1.5em;
+    }
+</style>

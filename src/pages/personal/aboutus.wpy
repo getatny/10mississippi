@@ -1,0 +1,61 @@
+<template>
+    <view id="aboutus-page">
+        <view class="header">
+            <view class="info">
+                <image src="../../static/img/aboutus.png"></image>
+                <view class="title">
+                    关于
+                    <view>我们</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class AboutUs extends wepy.page {
+        config = {
+            navigationBarTitleText: '关于我们',
+            navigationBarBackgroundColor: '#ffb11b'
+        }
+    }
+</script>
+
+<style lang="less">
+    #aboutus-page {
+        min-height: 100vh;
+        background: #eee;
+    }
+
+    .header {
+        text-align: center;
+        padding: 50rpx 0;
+        background: #ffb11b;
+
+        .info {
+            display: inline-block;
+            line-height: 80rpx;
+            height: 80rpx;
+        }
+
+        image {
+            width: 80rpx;
+            height: 80rpx;
+            display: inline-block;
+            float: left;
+            margin-right: 20rpx;
+        }
+
+        .title {
+            font-size: 35rpx;
+            display: inline-block;
+
+            view {
+                display: inline;
+                color: #fff;
+            }
+        }
+    }
+</style>
