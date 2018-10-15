@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6892c288-43f2-46b1-8cab-3318697e29e4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/10Mississippi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.wepycache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.wepyignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CButton.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config-sample.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mixins/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/article.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/article/articledetail.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/music/music.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/personal/aboutus.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/personal/feedback.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/personal/personal.wpy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/aboutus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/arrow-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/author.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/category.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/comment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/feedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/flower-non.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/flower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/index.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/lamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/life-non.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/life.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/music-non.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/music-play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/music-stop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/music.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/netease.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/qqmusic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/return.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/img/time.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/localstorage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wepy.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -98,11 +50,15 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="js" value="4" />
+          <entry key="json" value="1" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="JSON" value="1" />
           <entry key="JavaScript" value="4" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -110,11 +66,13 @@
         <counts>
           <entry key="gitignore" value="9" />
           <entry key="js" value="6" />
+          <entry key="md" value="356" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="6" />
+          <entry key="Markdown" value="356" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -122,6 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/music/music.wpy">
           <provider selected="true" editor-type-id="text-editor">
@@ -177,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config-sample.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -186,20 +149,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/article/article.wpy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3922">
-              <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/personal/personal.wpy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2257">
-              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="683">
+                <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -256,6 +213,7 @@
         <option value="$PROJECT_DIR$/src/pages/music/music.wpy" />
         <option value="$PROJECT_DIR$/src/.gitignore" />
         <option value="$PROJECT_DIR$/src/config-sample.js" />
+        <option value="$PROJECT_DIR$/src/README.md" />
       </list>
     </option>
   </component>
@@ -407,18 +365,18 @@
       <workItem from="1534137725100" duration="427000" />
       <workItem from="1536546373803" duration="125000" />
       <workItem from="1536549339653" duration="8000" />
-      <workItem from="1539608599096" duration="196000" />
+      <workItem from="1539608599096" duration="1111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186015000" />
+    <option name="totallyTimeSpent" value="186930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48335123" visible="true" weight="0.14752372" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48335123" visible="true" weight="0.14752372" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.51664877" side_tool="true" weight="0.14699684" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -445,7 +403,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/panel.wpy" />
     <entry file="file://$PROJECT_DIR$/src/components/guidtext.wpy" />
     <entry file="file://$PROJECT_DIR$/dist/components/panel.wxss" />
     <entry file="file://$PROJECT_DIR$/dist/components/group.js" />
@@ -538,9 +495,6 @@
     <entry file="file://$PROJECT_DIR$/src/static/img/cover.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CButton.wpy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -621,6 +575,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="683">
+            <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
